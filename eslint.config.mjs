@@ -17,10 +17,15 @@ export default defineConfig([
     languageOptions: { globals: globals.browser },
   },
   tseslint.configs.recommended,
-  pluginVue.configs["flat/essential"],
+  eslintConfigPrettier,
+  ...pluginVue.configs["flat/recommended"],
+  {
+    rules: {
+      "vue/block-order": ["error", { order: ["template", "script", "style"] }],
+    },
+  },
   {
     files: ["**/*.vue"],
     languageOptions: { parserOptions: { parser: tseslint.parser } },
   },
-  eslintConfigPrettier,
 ]);
