@@ -1,4 +1,4 @@
-import Home from "@/pages/Home.vue";
+import HomePage from "@/pages/HomePage.vue";
 import {
   createRouter,
   createWebHistory,
@@ -9,7 +9,7 @@ const routes: RouteRecordRaw[] = [
   {
     name: "Home",
     path: "/",
-    component: Home,
+    component: HomePage,
   },
 ];
 
