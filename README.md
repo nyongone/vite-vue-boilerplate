@@ -2,19 +2,19 @@
 
 ## Install Dependencies
 
-```bash
-npm i // or
+```shell
+npm i # or
 yarn install
 ```
 
 ## Start Vite Dev Server
 
-```bash
+```shell
 yarn dev
 ```
 
 ## Build Project
 
-```bash
+```shell
 yarn build
 ```
