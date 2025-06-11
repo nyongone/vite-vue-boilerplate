@@ -22,6 +22,7 @@ export default defineConfig([
   {
     rules: {
       "vue/block-order": ["error", { order: ["template", "script", "style"] }],
+      "vue/multi-word-component-names": ["error", { ignores: [] }],
     },
   },
   {
